@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.form-title {
+  color: #333;
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+  margin-bottom: 1rem; /* 16px */
+}
+
+.project-details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 0.375rem; /* 6px */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+form > label {
+  color: #0D476D;
+  font-weight: bold;
+  margin-bottom: 0.375rem; /* 6px */
+}
+
+form input,
+form textarea {
+  background-color: #f9f9f9;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.25rem; /* 4px */
+  padding: 0.5rem; /* 8px */
+  width: 100%;
+  margin-bottom: 1rem; /* 16px */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-button {
+  background-color: #0D476D; 
+  color: white;
+  padding: 0.5rem 1rem; /* 8px 16px */
+  border-radius: 0.375rem; /* 6px */
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #FF0000; /* Bootstrap red */
+  color: white;
+  padding: 0.5rem 1rem; /* 8px 16px */
+  border-radius: 0.375rem; /* 6px */
+  border: none;
+  cursor: pointer;
+}
+.save-button2 {
+  background-color: #0D476D; /* Bootstrap blue */
+  color: white;
+  padding: 0.5rem 1rem; /* 8px 16px */
+  border-radius: 0.375rem; /* 6px */
+  border: none;
+  cursor: pointer;
+}
+/* Estilos CSS para ajustar el color del texto de los subtítulos */
+.text-subtitle {
+  color: #0D476D; /* Color deseado para los subtítulos */
+}
