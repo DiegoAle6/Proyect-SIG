@@ -1,12 +1,10 @@
 import React from 'react';
-import Calendario from './pages/Calendario';
-import './css/Calendario.css'
+import Calendar from './pages/Calendario.js'
 
 function App() {
   return (
     <div className="app">
-      <h1>Calendario</h1>
-      <Calendario /> 
+      <Calendar /> 
     </div>
   );
 }
