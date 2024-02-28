@@ -3,19 +3,21 @@ import '../App.css'; // Asegúrate de importar tu archivo de estilos CSS
 
 
 const ProjectDetailsPage = () => {
-  // Estados para los campos del formulario
-  const [company] = useState("McDonald's");
-  const [advisor] = useState('Luis Fernando Viñafana');
-  const [projectTitle] = useState('E-commerce Avanzado con Nexus y SAP B');
-  const [career] = useState('TSU en TI en Área de Desarrollo en SW');
-  const [startDate] = useState('2024-05-13');
-  const [endDate] = useState('2024-08-13');
-  const [objectives] = useState('Desarrollar e implementar una solución de e-commerce para modernizar, la plataforma en línea. Mejorar la experiencia del usuario.');
-  const [problemStatement] = useState('Equipo Hotel, es una empresa dedicada a la venta de productos de cocina para hoteles, enfrenta el desafío de renovar su antiguo sitio web desarrollado en WordPress. Se necesita de un sitio más dinámico y funcional para mejorar la interacción con sus clientes y sus ventas.');
-  const [justification] = useState('El objetivo de este proyecto es modernizar y optimizar la plataforma online de “Equipo Hotel”, empresa de venta de productos de cocina hotelera. Se utilizarán tecnologías modernas como Nexus y la API de SAP Business One. Estas tecnologías son importantes por varias razones, y los beneficios son considerables tanto para la empresa como para sus clientes.');
-  const [activities] = useState('');
-  // Añadido: Estado para la matrícula del estudiante
-  const [studentId, setStudentId] = useState('');
+    // Estados para los campos del formulario
+    const [company] = useState("Amazon");
+    const [advisor] = useState('María García');
+    const [projectTitle] = useState('Desarrollo de Aplicación de Gestión de Proyectos');
+    const [career] = useState('Ingeniería Informática en Desarrollo de Software');
+    const [startDate] = useState('2023-09-20');
+    const [endDate] = useState('2024-03-15');
+    const [objectives] = useState('Crear una aplicación de gestión de proyectos que permita a los usuarios planificar, asignar tareas y hacer un seguimiento del progreso.');
+    const [problemStatement] = useState('La empresa XYZ necesita mejorar su proceso de gestión de proyectos, ya que actualmente se basa en documentos y hojas de cálculo dispersas.');
+    const [justification] = useState('La implementación de una aplicación de gestión de proyectos mejorará la eficiencia, la colaboración y la organización dentro de la empresa, lo que conducirá a una mejor entrega de proyectos y una mayor satisfacción del cliente.');
+    const [activities] = useState('1. Investigación de las necesidades de los usuarios.\n2. Diseño de la interfaz de usuario.\n3. Desarrollo de la aplicación utilizando tecnologías modernas.\n4. Pruebas y depuración.\n5. Implementación y formación del personal.');
+  
+    // Estado para la matrícula del estudiante
+    const [studentId, setStudentId] = useState('');
+  
 
   // Función para manejar la búsqueda por matrícula
   const handleSearch = () => {
@@ -57,29 +59,7 @@ const ProjectDetailsPage = () => {
     
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
-          <h1 className="block text-4xl font-bold mb-2  uppercase text-blue-900">EDICIÓN DEL ANTE-PROYECTO</h1>
-          <div className="mb-4">
-            <label htmlFor="student-id" className="block text-subtitle text-sm font-bold mb-2">
-              Ingresa la Matricula del Estudiante Colaborador
-            </label>
-            <div className="flex">
-              <input
-                type="text"
-                id="student-id"
-                value={studentId}
-                onChange={e => setStudentId(e.target.value)}
-                className="shadow appearance-none border rounded py-2 px-3 text-gray-700 
-                           leading-tight focus:outline-none focus:shadow-outline w-1/2 mr-2"
-              />
-              <button
-                type="button"
-                onClick={handleSearch}
-                className="save-button"
-              >
-                BUSCAR
-              </button>
-            </div>
-          </div>
+          
           <h1 className="block text-2xl font-bold mb-2 text-center text-blue-900">Detalles Del Proyecto:</h1>
 
           <label htmlFor="company-name" className="block text-subtitle text-sm font-bold mb-2">Empresa</label>
