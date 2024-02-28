@@ -48,7 +48,11 @@ const FormPage = () => {
     <div className="container mx-auto p-8">
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
-          <h1 className="block text-gray-700 text-lg font-bold mb-2">Edición del ante-proyecto</h1>
+        <h1 className="block text-3xl font-bold mb-2 text-center uppercase text-blue-900">EDICIÓN DEL ANTE-PROYECTO</h1>
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
           <div className="mb-4">
             <label htmlFor="student-id" className="block text-subtitle text-sm font-bold mb-2">
               Ingresa la Matricula del Estudiante Colaborador
