@@ -48,8 +48,11 @@ const FormPage = () => {
     <div className="container mx-auto p-8">
       <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
-        <h1 className="block text-3xl font-bold mb-2 text-center uppercase text-blue-900">EDICIÓN DEL ANTE-PROYECTO</h1>
+        <h1 className="block text-4xl font-bold mb-2  uppercase text-blue-900">EDICIÓN DEL ANTE-PROYECTO</h1>
 
+        &nbsp;
+        &nbsp;
+        &nbsp;
         &nbsp;
         &nbsp;
         &nbsp;
@@ -75,7 +78,12 @@ const FormPage = () => {
     BUSCAR
   </button>
 </div>
-
+&nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+<h1 className="block text-2xl font-bold mb-2 text-center  text-blue-900">Detalles Del Proyecto:</h1>
           </div>
 
           <label htmlFor="company-name" className="block text-subtitle text-sm font-bold mb-2">Empresa</label>
