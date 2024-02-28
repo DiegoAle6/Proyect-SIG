@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+
+
+
+
+
+.centered-box {
+  width: 900px; /* Tamaño aproximado del recuadro */
+  background-color: #f2f2f2; /* Color gris de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
