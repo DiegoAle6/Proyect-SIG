@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css'; // Asegúrate de importar tu archivo de estilos CSS
+// import '../App.css'; // Asegúrate de importar tu archivo de estilos CSS
 
 
 const ProjectDetailsPage = () => {
@@ -49,7 +49,18 @@ const ProjectDetailsPage = () => {
   };
 
   return (
-
+<>
+<style>
+        {`
+        .centered-box {
+          width: 900px; /* Tamaño aproximado del recuadro */
+          background-color: #f2f2f2; /* Color gris de fondo */
+          border-radius: 10px; /* Bordes redondeados */
+          padding: 20px; /* Espaciado interno */
+          margin: 0 auto; /* Centrar horizontalmente */
+        }
+        `}
+      </style>
 
     <div className="centered-box">
 
@@ -96,6 +107,8 @@ const ProjectDetailsPage = () => {
       </form>
     </div>
         </div>
+
+        </>
 
   );
 };
